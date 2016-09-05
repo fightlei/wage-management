@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/s_titile_bar">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+        <EditText 
+        android:id="@+id/et_search_eno"
+        android:hint="请输入员工编号"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/title_bar"
+
+        />
+        <Button 
+        android:id="@+id/bt_search_message"
+        android:layout_below="@id/et_search_eno"
+        android:layout_width="140dp"
+        android:layout_height="40dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_background"
+        android:text="修改员工信息"/>
+           <Button 
+        android:id="@+id/bt_search_salary"
+        android:layout_below="@id/bt_search_message"
+        android:layout_width="140dp"
+        android:layout_height="40dp" 
+        android:background="@drawable/bt_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="设定员工工资"/>
+        
+
+
+
+</RelativeLayout>

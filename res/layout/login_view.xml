@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/s_titile_bar">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户登录"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+    <ImageView 
+        android:layout_marginTop="20dp"
+        android:layout_height="250dp"
+        android:layout_width="200dp"
+        android:src="@drawable/zhaocaijinbao"
+        android:layout_gravity="center"
+        />
+
+    <TabHost 
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        
+    <TabWidget 
+        android:id="@android:id/tabs"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">    </TabWidget>
+    <FrameLayout 
+        android:id="@android:id/tabcontent"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >    
+        
+     <LinearLayout 
+    android:id="@+id/employee_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    	    
+        
+        <EditText 
+            android:id="@+id/ET_user_employee"
+            android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@+id/user_photo"
+      		android:hint="ID号"
+            />
+        
+        <ImageView
+    	    android:id="@+id/user_photo"
+    	    android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+			android:layout_alignBottom="@id/ET_user_employee"
+      		android:src="@drawable/male"/>
+
+        
+        <EditText 
+            android:id="@+id/ET_password_employee"
+            android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@+id/password_photo"
+      		android:hint="密码"
+
+      		android:layout_below="@id/ET_user_employee"
+            />
+        
+        <ImageView
+    	    android:id="@+id/password_photo"
+    	    android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_below="@id/ET_user_employee"
+			android:layout_alignBottom="@id/ET_password_employee"
+			android:layout_alignRight="@id/user_photo"
+      		android:src="@drawable/pen"/>
+        
+        <Button 
+            android:id="@+id/BT_login_employee"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ET_password_employee"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_background"
+            android:text="登录 "
+            />
+        
+        
+        </RelativeLayout>
+        
+        </LinearLayout>
+
+             
+     <LinearLayout 
+    android:id="@+id/admin_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+      
+        
+        <EditText 
+            android:id="@+id/ET_user_admin"
+            android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@+id/user_photo2"
+      		android:hint="ID号"
+            />
+        
+        <ImageView
+    	    android:id="@+id/user_photo2"
+    	    android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+			android:layout_alignBottom="@id/ET_user_admin"
+      		android:src="@drawable/female"/>
+
+        
+        <EditText 
+            android:id="@+id/ET_password_admin"
+            android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@+id/password_photo2"
+      		android:hint="密码"
+
+      		android:layout_below="@id/ET_user_admin"
+            />
+        
+        <ImageView
+    	    android:id="@+id/password_photo2"
+    	    android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_below="@id/ET_user_admin"
+			android:layout_alignBottom="@id/ET_password_admin"
+			android:layout_alignRight="@id/user_photo2"
+      		android:src="@drawable/pen"/>
+        
+        <Button 
+            android:id="@+id/BT_login_manage"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ET_password_admin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_background"
+            android:text="登录 "
+            />
+        
+        
+    </RelativeLayout>
+        
+    
+
+</LinearLayout>
+
+            
+      </FrameLayout>
+      
+      </LinearLayout>
+      
+    </TabHost>
+    
+</LinearLayout>
